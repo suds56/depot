@@ -246,7 +246,6 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   stimulus-rails
   tailwindcss-rails (~> 3.3.1)
-  tailwindcss-ruby (~> 3.0)
   turbo-rails
   tzinfo-data
   web-console
