@@ -26,13 +26,6 @@
     <%= form.email_field :email, class: "input-field" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label : pay_type %>
-    <%= form.select :pay_type, Order.pay_types.keys,
-                    {prompt: 'Select a payment method' },
-                    class: "input-field" %>
-  </div>
-
   <div data-controller="payment">
     <div class="my-5">
       <%= form.label :pay_type %>

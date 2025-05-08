@@ -4,7 +4,8 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["selection", "additionialFields"]
 
-  intialize() {
+  initialize() {
+    console.log("Hello")
     this.showAdditionalFields()
   }
 
@@ -13,6 +14,7 @@ export default class extends Controller {
 
     for (let fields of this.additionalFieldsTargets) {
       fields.disabled = fields.hidden = (fields.dataset.type != selection)
+      console.log(fields)
     }
   }
 }
